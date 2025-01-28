@@ -1,0 +1,967 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jean Portofolio</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!--TAILLWIND-->
+    <script src="https://unpkg.com/feather-icons"></script> <!--ICON-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"> <!--API phone css-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script> <!--API phone javascript-->
+</head>
+
+
+<body class="bg-white text-black">
+
+    <!--Navbar-->
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center px-4 py-6">
+            <div class="text-2xl text-red-500 font-bold">Ven Jean</div>
+
+            <ul id="navbar-link" class="text-white hidden md:flex space-x-4">
+                <li><a class="text-red-500 font-bold">Beranda</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="text-gray-800 hover:text-red-500 transition">Tentang Saya</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="text-gray-800 hover:text-red-500 transition">Portofolio</a></li>
+                
+            </ul>
+
+            <div class="flex item-center space-x-2">
+                <div>
+                <button id="language-toggle" class="p-2 border border-rounded rounded-full border-red-500 hover:bg-gray-100 ">
+                    <i data-feather="globe" class="text-red-500"></i>
+                </button>
+
+                <button id="menu-toggle" class="p-2">
+                    <i data-feather="menu" class="text-red-500 md:hidden"></i>
+                </button>
+            </div>
+
+        </nav>
+
+        <!--Mobile Display-->
+        <ul id="menu-dropdown" class="py-6 hidden md:hidden shadow-md">
+            <li><a class="block text-red-500 font-bold text-center py-2">Beranda</a></li>
+            <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Tentang Saya</a></li>
+            <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Portofolio</a></li>
+        </ul>
+
+        <ul id="language-dropdown" class="pt-4 pb-0 hidden shadow-md md:absolute md:right-16 md:w-32 md:rounded md:rounded-md">
+            <li><button id="btn-indonesia" class="w-full hover:bg-gray-100 py-2">Indonesia</button></li>
+            <li><button id="btn-english" class="w-full hover:bg-gray-100 py-2">English</button></li>
+        </ul>
+
+    </header>
+
+    <!--Top Content-->
+    <section class="bg-gray-100 py-10 md:py-16 text-gray-800">
+        <div class="container mx-auto">
+            <!--Pembagian Kolom-->
+            <div class="grid grid-cols-1 md:grid-cols-2 item-center">
+
+
+                <!--Kanan dekstop/ kiri mobile-->
+                <div class="flex justify-center mt-0 md:mt-10 lg:mt-0 md:order-2">
+                    <img src="https://venjean.github.io/Portofolio-Website/src/img/PAS FOTO TRANS7.png" class="w-2/4 md:w-2/4 lg:w-1/2 rounded-lg shadow-md">
+                </div>
+
+                <!--Kiri desktop / kanan mobile-->
+                <div class="text-left px-6 md:order-1 mt-6">
+
+                    <div id="top-contents">
+                        <h1 class="text-xl md:text-2xl lg:text-4xl lg:mt-4">Hi,Saya <a class="font-bold text-2xl md:text-4xl lg:text-6xl"><br> Colonel Caesar <br> Sancho Ven Jean</a></h1>
+                        <p class="mt-2 lg:text-2xl lg:mt-4">"Seorang Professional dalam bidang <br> <span class="font-semibold">Front-End Developer & Web designer</span>"</p>
+                    </div>
+            
+                    <div id="top-buttons" class="text-center md:text-left space-y-2 md:space-y-0 md:space-x-4 mt-4 lg:mt-10">
+                        <a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block md:inline-block bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600">
+                          Lihat Project
+                        </a>
+                        <a href="https://venjean.github.io/Portofolio-Website/about.html" class="block md:inline-block bg-gray-200 px-6 py-3 rounded-md shadow hover:bg-gray-300">
+                          Tentang Saya
+                        </a>
+                      </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+    <!--Contact Contents-->
+    <section class="bg-white text-gray-800 lg:mt-10">
+
+      <div class="flex flex-col lg:flex-row lg:pl-10">
+        <!--Text-->
+        <div class="lg:items-start lg:w-1/2">
+            <div id="title-contact-content">
+                <div class="text-left px-6 py-8">
+                    <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>Hubungi Saya</h3>
+                    <h5 class="text-2xl lg:text-4xl font-bold">Mari Berdiskusi untuk <br> <a class="text-red-500 font-normal">Proyek Anda Selanjutnya</a></h5>
+                    <p class="py-2 lg:text-lg">Saya selalu terbuka untuk membahas <a class="font-semibold">proyek baru, peluang, atau kolaborasi.</a> 
+                        Jangan ragu untuk menghubungi, dan saya akan merespons secepat mungkin.</p>
+                </div>
+            </div>
+
+            <!--Sosmed display on dekstop-->
+            <div class="mt-10 px-6 hidden lg:block">
+                <div class="flex space-x-1">
+                    <a href="https://instagram.com/jean.projectcareer">
+                        <div class="flex justify-center pt-2 text-white bg-red-500 w-10 h-10 rounded-full hover:bg-red-600 hover:cursor-pointer">
+                            <a><svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+                        </div>
+                    </a>
+                    <span class="text-gray-800 font-semibold pt-2">@jean.projectcareer</span>
+                </div>
+
+                <div class="flex space-x-1 mt-4">
+                    <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean">
+                        <div class="flex justify-center pt-2 text-white bg-red-500 w-10 h-10 rounded-full hover:bg-red-600 hover:cursor-pointer">
+                            <a><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+                        </div>
+                    </a>
+                    <span class="text-gray-800 font-semibold pt-2">+62 895-3446-43800</span>
+                </div>
+
+                <div class="flex space-x-1 mt-4">
+                    <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean">
+                        <div class="flex justify-center pt-2 text-white bg-red-500 w-10 h-10 rounded-full hover:bg-red-600 hover:cursor-pointer">
+                            <a><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                        </div>
+                    </a>
+                    <span class="text-gray-800 font-semibold pt-2">bossvr7x@gmail.com</span>
+                </div>
+                
+            </div>
+        </div>
+
+        <!--FORM-->
+        <div id="form-languages" class="lg:w-1/2">
+            <form id="form-message" class="lg:py-8">
+                <div class="lg:flex">
+                    <div class="w-full px-6 lg:w-1/2 lg:pr-4">
+                        <label class="block font-semibold tracking-wide" for="your-name">Nama Anda : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="text" id="your-name" placeholder="nama Lengkap" required>
+                    </div>
+
+                    <div class="w-full px-6 py-2 lg:py-0 lg:w-1/2 lg:pl-0">
+                        <label class="block font-semibold tracking-wide" for="email">Email : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="email" id="email" placeholder="contoh@gmail.com" required>
+                    </div>
+                </div>
+
+                <div class="lg:flex">
+                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pr-0">
+                        <label class="block font-semibold tracking-wide" for="phone">Nomor Telepon : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="tel" id="phone" required>
+                    </div>
+
+                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pl-0 ">
+                        <label class="block font-semibold tracking-wide" for="interest">Pembahasan :<a class="text-red-500">*</a></label>
+                        <select class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" id="interest" required>
+                            <option>Peluang Karir</option>
+                            <option>Peluang Sponsorship</option>
+                            <option>Permintaan Konsultasi</option>
+                            <option>Umpan Balik & Saran</option>
+                            <option>Lainnya</option>
+                        </select>
+                        
+                    </div>
+                </div>
+
+                <div class="w-full px-6 py-2">
+                    <label class="block font-semibold tracking-wide" for="message">
+                        Isi Pesan Anda : <a class="text-red-500">*</a>
+                    </label>
+
+                    <textarea 
+                        id="message" 
+                        rows="6" 
+                        placeholder="Tulis pesan anda disini..." 
+                        class="block w-full bg-gray-200 border border-red-500 rounded-lg 
+                        focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none 
+                        px-3 py-2"
+                        required
+                        ></textarea>
+                </div>
+
+
+                <div class="w-full px-6 mt-4">
+                    <button id="btn-message" type="submit" 
+                        class="block w-full bg-red-400 text-white 
+                        px-4 py-3 rounded-lg cursor-not-allowed"
+                        disabled
+                        >Kirim Pesan
+                    </button>
+                </div>
+            </form>
+        </div>
+
+            <!--Sosmed display on mobile-->
+
+            <div class="mt-8 px-6 lg:hidden">
+                <div class="flex space-x-1">
+                    <a href="https://instagram.com/jean.projectcareer">
+                        <div class="flex justify-center pt-2 text-white bg-red-500 w-10 h-10 rounded-full hover:bg-red-600 hover:cursor-pointer">
+                            <a><svg xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-instagram"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z" /><path d="M9 12a3 3 0 1 0 6 0a3 3 0 0 0 -6 0" /><path d="M16.5 7.5v.01" /></svg>
+                        </div>
+                    </a>
+                    <span class="text-gray-800 font-semibold pt-2">@jean.projectcareer</span>
+                </div>
+    
+                <div class="flex space-x-1 mt-4">
+                    <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean">
+                        <div class="flex justify-center pt-2 text-white bg-red-500 w-10 h-10 rounded-full hover:bg-red-600 hover:cursor-pointer">
+                            <a><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-brand-whatsapp"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" /><path d="M9 10a.5 .5 0 0 0 1 0v-1a.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a.5 .5 0 0 0 0 -1h-1a.5 .5 0 0 0 0 1" /></svg>
+                        </div>
+                    </a>
+                    <span class="text-gray-800 font-semibold pt-2">+62 895-3446-43800</span>
+                </div>
+    
+                <div class="flex space-x-1 mt-4">
+                    <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean">
+                        <div class="flex justify-center pt-2 text-white bg-red-500 w-10 h-10 rounded-full hover:bg-red-600 hover:cursor-pointer">
+                            <a><svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-mail"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" /><path d="M3 7l9 6l9 -6" /></svg>
+                        </div>
+                    </a>
+                    <span class="text-gray-800 font-semibold pt-2">bossvr7x@gmail.com</span>
+                </div>
+                
+            </div>
+
+            
+        </div>
+
+    </section>
+
+
+    <!--FAQ-->
+    <section id="faq-languages" class="bg-gray-100 text-gray-800 mt-8 pb-8 lg:pb-12">
+
+        <!--Judul-->
+        <div class="px-6 pt-6 lg:pt-10 lg:text-center">
+        <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>FAQ</h3>
+        <h2 class="text-xl lg:text-2xl font-bold">Pertanyaan? <a class="text-red-500 font-normal">Lihat Disini.</a></h2>
+        </div>
+
+
+        <!--FAQ Button-->
+        <div class="px-6 lg:px-60 lg:items-center">
+            <!--1--> 
+            <button id="btn-faq" onclick="toggleFAQ()"
+             class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                <span>Perusahaan industri apa saja yang pernah Anda bekerja di sebagai seorang web designer?</span>
+                <span id="icon-faq" class="text-xl font-semibold transition-all duration-100">+</span>
+            </button>
+
+            <div id="answer-faq" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                Jenis perusahaan dengan proyek paling menonjol yang pernah saya kerjakan adalah perusahaan konvensional di bidang hiburan Indonesia, yang bergerak dalam pemasaran berjenjang <br class="lg:hidden"><span class="text-red-500">(multi-level marketing)</span> dengan konsep e-commerce serta program-program pendukung lainnya.
+            </div>
+
+            <!--2-->
+
+            <button id="btn-faq2" onclick="toggleFAQ2()"
+             class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                <span>Apakah Anda bersedia bekerja sebagai freelancer dalam bidang desain?</span>
+                <span id="icon-faq2" class="text-xl font-semibold transition-all duration-100">+</span>
+            </button>
+
+            <div id="answer-faq2" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                Saya <span class="text-red-500">bersedia</span> bekerja sebagai freelancer desain untuk mendukung kebutuhan perusahaan, baik dalam jangka pendek maupun panjang.
+            </div>
+
+            <!--3-->
+
+            <button id="btn-faq3" onclick="toggleFAQ3()"
+             class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                <span>Tools atau perangkat lunak apa yang Anda gunakan dalam proses desain?</span>
+                <span id="icon-faq3" class="text-xl font-semibold transition-all duration-100">+</span>
+            </button>
+
+            <div id="answer-faq3" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                Saat ini, saya lebih fokus menggunakan <span class="text-red-500">Figma</span> sebagai alat utama, termasuk untuk mengembangkan alur atau flow website serta elemen-elemen desain seperti tombol dan komponen lainnya.
+            </div>
+
+            <!--4-->
+
+            <button id="btn-faq4" onclick="toggleFAQ4()"
+             class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                <span>Bagaimana cara saya dapat melihat portofolio lengkap dari proyek-proyek Anda?</span>
+                <span id="icon-faq4" class="text-xl font-semibold transition-all duration-100">+</span>
+            </button>
+
+            <div id="answer-faq4" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                Anda dapat melihat portofolio saya melalui akun media sosial seperti <span class="text-red-500">Instagram</span>, atau melalui <span class="text-red-500">tautan Figma</span> yang tertera di CV atau pada situs web ini.
+            </div>
+
+
+        </div>
+        
+
+
+
+    </section>
+
+
+
+    <!--FOOTER-->
+    <footer class=" text-gray-800 mt-4">
+       <div id="footer-languages"> 
+            <div class="grid grid-cols-1 lg:grid-cols-4 text-left">
+                <!--Navigasi-->
+
+                <div class="pt-8 px-6 hidden lg:block">
+                    <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
+                    <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                        <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                        <li>Telepon: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                        <li>Instagram: <a href="https://instagram.com/jean.projectcareer" target="_blank" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" target="_blank" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                    </ul>
+                </div>
+
+                <div class="pt-8 px-6">
+                    <h4 class="text-lg font-semibold">Navigasi</h4>
+                    <ul class="mt-2 text-sm space-y-2">
+                        <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="hover:underline">Beranda</a></li>
+                        <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="hover:underline">Tentang Saya</a></li>
+                        <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="hover:underline">Portofolio</a></li>
+                    </ul>
+                </div>
+
+                <!--Social Media-->
+                <div class="pt-8 px-6 lg:hidden">
+                    <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
+                    <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                        <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                        <li>Telepon: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                        <li>Instagram: <a href="https://instagram.com/jean.projectcareer" target="_blank" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" target="_blank" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="w-full text-center mt-8 bg-red-500 pt-2 pb-2 text-white">
+                <small>&copy; 2025 Nama Perusahaan. Semua Hak Dilindungi.</small>
+            </div>
+
+        </div>
+
+
+
+    </footer>
+
+
+    <!--Script-->
+    <script>
+        feather.replace();
+
+        const navbarLink = document.getElementById('navbar-link');
+        const languageToggle = document.getElementById('language-toggle');
+        const menuToggle = document.getElementById('menu-toggle');
+        
+        const btnIndo = document.getElementById('btn-indonesia');
+        const btnEng = document.getElementById('btn-english');
+        
+
+
+        const languageDropdown = document.getElementById('language-dropdown');
+        const menuDropdown = document.getElementById('menu-dropdown');
+
+        const topContents = document.getElementById('top-contents');
+        const topButtons = document.getElementById('top-buttons');
+
+        const phoneQuery = document.querySelector("#phone");
+
+        const formMessage = document.getElementById('form-message');
+        const btnMessage = document.getElementById('btn-message');
+
+        const titleContactContent = document.getElementById('title-contact-content');
+        const formLanguages = document.getElementById('form-languages');
+        const faqLanguages = document.getElementById('faq-languages');
+        const footerLanguages = document.getElementById('footer-languages');
+
+        //Language dropdown display
+        languageToggle?.addEventListener('click', () => {
+            languageDropdown.classList.toggle('hidden');
+        });
+
+        //english mode
+        btnEng?.addEventListener('click', () => {
+            navbarLink.innerHTML =`
+                <li><a class="text-red-500 font-bold">Home</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="text-gray-800 hover:text-red-500 transition">About Me</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="text-gray-800 hover:text-red-500 transition">Project</a></li>
+            `;
+
+            menuDropdown.innerHTML = `
+            <ul id="menu-dropdown" class="py-6 md:hidden">
+                <li><a class="block text-red-500 font-bold text-center py-2">Home</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">About Me</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Project</a></li>
+            </ul>
+            `;
+
+            languageDropdown.classList.add('hidden');
+
+            topContents.innerHTML =`
+                <h1 class="text-xl md:text-2xl lg:text-4xl lg:mt-4">Hi,Im <a class="font-bold text-2xl md:text-4xl lg:text-6xl"><br> Colonel Caesar <br> Sancho Ven Jean</a></h1>
+                <p class="mt-2 lg:text-2xl lg:mt-4">"A Professional in the Field of <br> <span class="font-semibold">Front-End Developer & Web designer</span>"</p>
+            `;
+
+            topButtons.innerHTML =`
+                <a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block md:inline-block bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600">
+                          Explore Projects
+                </a>
+                <a href="https://venjean.github.io/Portofolio-Website/about.html" class="block md:inline-block bg-gray-200 px-6 py-3 rounded-md shadow hover:bg-gray-300">
+                          About Me
+                </a>
+            `;
+
+            titleContactContent.innerHTML =`
+            <div class="text-left px-6 py-8">
+                <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>Contact Me</h3>
+                <h5 class="text-2xl lg:text-4xl font-bold">Let's Talk for <br> <a class="text-red-500 font-normal">Your Next Projects</a></h5>
+                <p class="py-2 lg:text-lg">Always open to discussing  <a class="font-semibold">new projects, opportunities, or collaborations.</a> 
+                    Feel free to reach out, and I’ll get back to you as soon as possible.</p>
+            </div>
+            `;
+
+            formLanguages.innerHTML = `
+            <form id="form-message" class="lg:py-8">
+                <div class="lg:flex">
+                    <div class="w-full px-6 lg:w-1/2 lg:pr-4">
+                        <label class="block font-semibold tracking-wide" for="your-name">Your Name : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="text" id="your-name" placeholder="full name" required>
+                    </div>
+
+                    <div class="w-full px-6 py-2 lg:py-0 lg:w-1/2 lg:pl-0">
+                        <label class="block font-semibold tracking-wide" for="email">Email : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="email" id="email" placeholder="example@gmail.com" required>
+                    </div>
+                </div>
+
+                <div class="lg:flex">
+                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pr-0">
+                        <label class="block font-semibold tracking-wide" for="phone">Phone : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="tel" id="phone" required>
+                    </div>
+
+                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pl-0 ">
+                        <label class="block font-semibold tracking-wide" for="interest">Interested In :<a class="text-red-500">*</a></label>
+                        <select class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" id="interest" required>
+                            <option>Job Opportunities</option>
+                            <option>Sponsorship Opportunity</option>
+                            <option>Consultation Request</option>
+                            <option>Feedback and Suggestions</option>
+                            <option>Other Inquiries</option>
+                        </select>
+                        
+                    </div>
+                </div>
+
+                <div class="w-full px-6 py-2">
+                    <label class="block font-semibold tracking-wide" for="message">
+                        Your Message : <a class="text-red-500">*</a>
+                    </label>
+
+                    <textarea 
+                        id="message" 
+                        rows="6" 
+                        placeholder="Write your text here..." 
+                        class="block w-full bg-gray-200 border border-red-500 rounded-lg 
+                        focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none 
+                        px-3 py-2"
+                        required
+                        ></textarea>
+                </div>
+
+
+                <div class="w-full px-6 mt-4">
+                    <button id="btn-message" type="submit" 
+                        class="block w-full bg-red-400 text-white 
+                        px-4 py-3 rounded-lg cursor-not-allowed"
+                        disabled
+                        >Send
+                    </button>
+                </div>
+            </form>
+            
+            `;
+
+            faqLanguages.innerHTML = `
+            <!--Judul-->
+                <div class="px-6 pt-6 lg:pt-10 lg:text-center">
+                <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>FAQ</h3>
+                <h2 class="text-xl lg:text-2xl font-bold">Questions? <a class="text-red-500 font-normal">Look Here.</a></h2>
+                </div>
+
+
+                <!--FAQ Button-->
+                <div class="px-6 lg:px-60 lg:items-center">
+                    <!--1--> 
+                    <button id="btn-faq" onclick="toggleFAQ()"
+                    class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                        <span>Which industries have you worked with as a web designer?</span>
+                        <span id="icon-faq" class="text-xl font-semibold transition-all duration-100">+</span>
+                    </button>
+
+                    <div id="answer-faq" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                        The type of company with the most notable project I have worked on is a conventional Indonesian entertainment company engaged in <br class="lg:hidden"><span class="text-red-500">(multi-level marketing)</span> incorporating an e-commerce concept and supporting programs.
+                    </div>
+
+                    <!--2-->
+
+                    <button id="btn-faq2" onclick="toggleFAQ2()"
+                    class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                        <span>Are you open to working as a freelance designer?</span>
+                        <span id="icon-faq2" class="text-xl font-semibold transition-all duration-100">+</span>
+                    </button>
+
+                    <div id="answer-faq2" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                        I am <span class="text-red-500">available</span> to working as a freelance designer to support a company's needs, whether for short-term or long-term projects.
+                    </div>
+
+                    <!--3-->
+
+                    <button id="btn-faq3" onclick="toggleFAQ3()"
+                    class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                        <span>What tools or software do you use in your design process?</span>
+                        <span id="icon-faq3" class="text-xl font-semibold transition-all duration-100">+</span>
+                    </button>
+
+                    <div id="answer-faq3" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                        Currently, I primarily focus on using <span class="text-red-500">Figma</span> as my main tool, including for developing website flows and design elements such as buttons and other components.
+                    </div>
+
+                    <!--4-->
+
+                    <button id="btn-faq4" onclick="toggleFAQ4()"
+                    class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                        <span>How can I view your complete portfolio of projects?</span>
+                        <span id="icon-faq4" class="text-xl font-semibold transition-all duration-100">+</span>
+                    </button>
+
+                    <div id="answer-faq4" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                        You can view my portfolio through my social media accounts, such as <span class="text-red-500">Instagram</span>, or via <span class="text-red-500">Figma link</span> provided in my CV or on this website.
+                    </div>
+
+
+                </div>
+            `;
+
+            footerLanguages.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-4 text-left">
+                <!--Navigasi-->
+
+                <div class="pt-8 px-6 hidden lg:block">
+                    <h4 class="text-lg font-semibold">Further Information</h4>
+                    <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                        <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                        <li>Phone: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                        <li>Instagram: <a href="https://instagram.com/jean.projectcareer" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                    </ul>
+                </div>
+
+                <div class="pt-8 px-6">
+                    <h4 class="text-lg font-semibold">Navigation</h4>
+                    <ul class="mt-2 text-sm space-y-2">
+                        <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="hover:underline">Home</a></li>
+                        <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="hover:underline">About</a></li>
+                        <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="hover:underline">Project</a></li>
+                    </ul>
+                </div>
+
+                <!--Social Media-->
+                <div class="pt-8 px-6 lg:hidden">
+                    <h4 class="text-lg font-semibold">Further Information</h4>
+                    <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                        <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                        <li>Phone: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                        <li>Instagram: <a href="https://instagram.com/jean.projectcareer" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="w-full text-center mt-8 bg-red-500 pt-2 pb-2 text-white">
+                <small>&copy; 2025 Jean Portofolio. All Rights Reserved.</small>
+            </div>
+
+            `;
+
+        });
+
+        //indonesian mode
+        btnIndo?.addEventListener('click', () => {
+            navbarLink.innerHTML =`
+                <li><a class="text-red-500 font-bold">Beranda</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="text-gray-800 hover:text-red-500 transition">Tentang Saya</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="text-gray-800 hover:text-red-500 transition">Portofolio</a></li>
+            `;
+
+            menuDropdown.innerHTML = `
+            <ul id="menu-dropdown" class="py-6 md:hidden">
+                <li><a class="block text-red-500 text-center font-bold py-2">Beranda</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Tentang Saya</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Portofolio</a></li>
+            </ul>
+            `;
+
+            languageDropdown.classList.add('hidden');
+
+            topContents.innerHTML =`
+                <h1 class="text-xl md:text-2xl lg:text-4xl lg:mt-4">Hi,Saya <a class="font-bold text-2xl md:text-4xl lg:text-6xl"><br> Colonel Caesar <br> Sancho Ven Jean</a></h1>
+                <p class="mt-2 lg:text-2xl lg:mt-4">"Seorang Professional dalam bidang <br> <span class="font-semibold">Front-End Developer & web designer</span>"</p>
+            `;
+
+            topButtons.innerHTML =`
+                <a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block md:inline-block bg-red-500 text-white px-6 py-3 rounded-md shadow hover:bg-red-600">
+                          Lihat Project
+                </a>
+                <a href="https://venjean.github.io/Portofolio-Website/about.html" class="block md:inline-block bg-gray-200 px-6 py-3 rounded-md shadow hover:bg-gray-300">
+                          Tentang Saya
+                </a>
+            `;
+
+            titleContactContent.innerHTML =`
+            <div class="text-left px-6 py-8">
+                <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>Hubungi Saya</h3>
+                <h5 class="text-2xl lg:text-4xl font-bold">Mari Berdiskusi untuk <br> <a class="text-red-500 font-normal">Proyek Anda Selanjutnya</a></h5>
+                <p class="py-2 lg:text-lg">Saya selalu terbuka untuk membahas <a class="font-semibold">proyek baru, peluang, atau kolaborasi.</a> 
+                    Jangan ragu untuk menghubungi, dan saya akan merespons secepat mungkin.</p>
+            </div>
+            `;
+
+            formLanguages.innerHTML = `
+            <form id="form-message" class="lg:py-8">
+                <div class="lg:flex">
+                    <div class="w-full px-6 lg:w-1/2 lg:pr-4">
+                        <label class="block font-semibold tracking-wide" for="your-name">Nama Anda : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="text" id="your-name" placeholder="nama Lengkap" required>
+                    </div>
+
+                    <div class="w-full px-6 py-2 lg:py-0 lg:w-1/2 lg:pl-0">
+                        <label class="block font-semibold tracking-wide" for="email">Email : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="email" id="email" placeholder="contoh@gmail.com" required>
+                    </div>
+                </div>
+
+                <div class="lg:flex">
+                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pr-0">
+                        <label class="block font-semibold tracking-wide" for="phone">Nomor Telepon : <a class="text-red-500">*</a></label>
+                        <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="tel" id="phone" required>
+                    </div>
+
+                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pl-0 ">
+                        <label class="block font-semibold tracking-wide" for="interest">Pembahasan :<a class="text-red-500">*</a></label>
+                        <select class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" id="interest" required>
+                            <option>Peluang Karir</option>
+                            <option>Peluang Sponsorship</option>
+                            <option>Permintaan Konsultasi</option>
+                            <option>Umpan Balik & Saran</option>
+                            <option>Lainnya</option>
+                        </select>
+                        
+                    </div>
+                </div>
+
+                <div class="w-full px-6 py-2">
+                    <label class="block font-semibold tracking-wide" for="message">
+                        Isi Pesan Anda : <a class="text-red-500">*</a>
+                    </label>
+
+                    <textarea 
+                        id="message" 
+                        rows="6" 
+                        placeholder="Tulis pesan anda disini..." 
+                        class="block w-full bg-gray-200 border border-red-500 rounded-lg 
+                        focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none 
+                        px-3 py-2"
+                        required
+                        ></textarea>
+                </div>
+
+
+                <div class="w-full px-6 mt-4">
+                    <button id="btn-message" type="submit" 
+                        class="block w-full bg-red-400 text-white 
+                        px-4 py-3 rounded-lg cursor-not-allowed"
+                        disabled
+                        >Kirim Pesan
+                    </button>
+                </div>
+            </form>
+            
+            `;
+
+
+            faqLanguages.innerHTML = `
+            <!--Judul-->
+            <div class="px-6 pt-6 lg:pt-10 lg:text-center">
+            <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>FAQ</h3>
+            <h2 class="text-xl lg:text-2xl font-bold">Pertanyaan? <a class="text-red-500 font-normal">Lihat Disini.</a></h2>
+            </div>
+
+
+            <!--FAQ Button-->
+            <div class="px-6 lg:px-60 lg:items-center">
+                <!--1--> 
+                <button id="btn-faq" onclick="toggleFAQ()"
+                class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                    <span>Perusahaan industri apa saja yang pernah Anda bekerja di sebagai seorang web designer?</span>
+                    <span id="icon-faq" class="text-xl font-semibold transition-all duration-100">+</span>
+                </button>
+
+                <div id="answer-faq" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                    Jenis perusahaan dengan proyek paling menonjol yang pernah saya kerjakan adalah perusahaan konvensional di bidang hiburan Indonesia, yang bergerak dalam pemasaran berjenjang <br class="lg:hidden"><span class="text-red-500">(multi-level marketing)</span> dengan konsep e-commerce serta program-program pendukung lainnya.
+                </div>
+
+                <!--2-->
+
+                <button id="btn-faq2" onclick="toggleFAQ2()"
+                class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                    <span>Apakah Anda bersedia bekerja sebagai freelancer dalam bidang desain?</span>
+                    <span id="icon-faq2" class="text-xl font-semibold transition-all duration-100">+</span>
+                </button>
+
+                <div id="answer-faq2" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                    Saya <span class="text-red-500">bersedia</span> bekerja sebagai freelancer desain untuk mendukung kebutuhan perusahaan, baik dalam jangka pendek maupun panjang.
+                </div>
+
+                <!--3-->
+
+                <button id="btn-faq3" onclick="toggleFAQ3()"
+                class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                    <span>Tools atau perangkat lunak apa yang Anda gunakan dalam proses desain?</span>
+                    <span id="icon-faq3" class="text-xl font-semibold transition-all duration-100">+</span>
+                </button>
+
+                <div id="answer-faq3" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                    Saat ini, saya lebih fokus menggunakan <span class="text-red-500">Figma</span> sebagai alat utama, termasuk untuk mengembangkan alur atau flow website serta elemen-elemen desain seperti tombol dan komponen lainnya.
+                </div>
+
+                <!--4-->
+
+                <button id="btn-faq4" onclick="toggleFAQ4()"
+                class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
+                    <span>Bagaimana cara saya dapat melihat portofolio lengkap dari proyek-proyek Anda?</span>
+                    <span id="icon-faq4" class="text-xl font-semibold transition-all duration-100">+</span>
+                </button>
+
+                <div id="answer-faq4" class="hidden text-sm px-6 py-2 border border-red-500 border-t-0 rounded-b-lg">
+                    Anda dapat melihat portofolio saya melalui akun media sosial seperti <span class="text-red-500">Instagram</span>, atau melalui <span class="text-red-500">tautan Figma</span> yang tertera di CV atau pada situs web ini.
+                </div>
+
+
+            </div>
+            `;
+
+
+            footerLanguages.innerHTML = `
+                <div class="grid grid-cols-1 lg:grid-cols-4 text-left">
+                <!--Navigasi-->
+
+                <div class="pt-8 px-6 hidden lg:block">
+                    <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
+                    <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                        <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                        <li>Telepon: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                        <li>Instagram: <a href="https://instagram.com/jean.projectcareer" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                    </ul>
+                </div>
+
+                <div class="pt-8 px-6">
+                    <h4 class="text-lg font-semibold">Navigasi</h4>
+                    <ul class="mt-2 text-sm space-y-2">
+                        <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="hover:underline">Beranda</a></li>
+                        <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="hover:underline">Tentang Saya</a></li>
+                        <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="hover:underline">Portofolio</a></li>
+                    </ul>
+                </div>
+
+                <!--Social Media-->
+                <div class="pt-8 px-6 lg:hidden">
+                    <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
+                    <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                        <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                        <li>Telepon: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                        <li>Instagram: <a href="https://instagram.com/jean.projectcareer" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+            <div class="w-full text-center mt-8 bg-red-500 pt-2 pb-2 text-white">
+                <small>&copy; 2025 Jean Portofolio. Semua Hak Dilindungi.</small>
+            </div>
+
+            `;
+
+
+        });
+
+        //Menu dropdown display
+        menuToggle?.addEventListener('click', () => {
+            menuDropdown.classList.toggle('hidden');
+        });
+
+        //random klik akan menghilangkan dropdown menu
+        document.addEventListener('click', (event) => {
+        if (!languageToggle?.contains(event.target) && !languageDropdown?.contains(event.target)) {
+          languageDropdown.classList.add('hidden');
+        }
+      });
+
+      //form phone
+      const iti = window.intlTelInput(phoneQuery, {
+        initialCountry: "auto", //negara awal berdasarkan ip
+        geoIpLookup: function(callback) { //API deteksi negara berdasarkan IP
+            fetch('https://ipapi.co/json')
+            .then(res => res.json())
+            .then(data => callback(data.country_code))
+            .catch(() => callback("ID")); //default ke indonesia jika terjadi error/gagal 
+        },
+        utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"
+      });
+
+
+        //fungsi warna
+        function changeBorderColor(input) {
+            if (input.checkValidity()) {
+                input.classList.remove("border-red-500");
+                input.classList.add("border-green-500");
+            } else {
+                input.classList.remove("border-green-500");
+                input.classList.add("border-red-500");
+            }
+        }
+
+        formMessage.addEventListener("input", () => {
+        // Loop melalui semua input dan ubah warna border sesuai dengan validitasnya
+        const inputs = formMessage.querySelectorAll("input, select, textarea");
+        inputs.forEach(input => {
+            changeBorderColor(input);
+        });
+
+        //penyalaan button pada form yang sudah valid
+        if (formMessage.checkValidity()) {
+            btnMessage.disabled = false;
+            btnMessage.classList.remove("bg-red-400", "cursor-not-allowed");
+            btnMessage.classList.add("bg-red-500", "hover:bg-red-600", "cursor-pointer");
+    
+        }else {
+            btnMessage.disabled = true;
+            btnMessage.classList.add("bg-red-400", "cursor-not-allowed");
+            btnMessage.classList.remove("bg-red-500", "hover:bg-red-600", "cursor-pointer");
+        }
+      });
+
+
+
+
+
+
+      //FAQ
+
+      function toggleFAQ() {
+      const btnFAQ = document.getElementById('btn-faq');
+      const iconFAQ = document.getElementById('icon-faq');
+      const answerFAQ = document.getElementById('answer-faq');
+
+      if (answerFAQ.classList.contains('hidden')) {
+        answerFAQ.classList.remove('hidden');
+        btnFAQ.classList.add('bg-red-600');
+        btnFAQ.classList.add('text-white');
+        iconFAQ.textContent = '-';
+      } else {
+        answerFAQ.classList.add('hidden');
+        btnFAQ.classList.remove('bg-red-600');
+        btnFAQ.classList.remove('text-white');
+        iconFAQ.textContent = '+';
+      }
+
+      };
+
+      function toggleFAQ2() {
+      const btnFAQ2 = document.getElementById('btn-faq2');
+      const iconFAQ2 = document.getElementById('icon-faq2');
+      const answerFAQ2 = document.getElementById('answer-faq2');
+
+      if (answerFAQ2.classList.contains('hidden')) {
+        answerFAQ2.classList.remove('hidden');
+        btnFAQ2.classList.add('bg-red-600');
+        btnFAQ2.classList.add('text-white');
+        iconFAQ2.textContent = '-';
+      } else {
+        answerFAQ2.classList.add('hidden');
+        btnFAQ2.classList.remove('bg-red-600');
+        btnFAQ2.classList.remove('text-white');
+        iconFAQ2.textContent = '+';
+      }
+
+      };
+
+
+      function toggleFAQ3() {
+      const btnFAQ3 = document.getElementById('btn-faq3');
+      const iconFAQ3 = document.getElementById('icon-faq3');
+      const answerFAQ3 = document.getElementById('answer-faq3');
+
+      if (answerFAQ3.classList.contains('hidden')) {
+        answerFAQ3.classList.remove('hidden');
+        btnFAQ3.classList.add('bg-red-600');
+        btnFAQ3.classList.add('text-white');
+        iconFAQ3.textContent = '-';
+      } else {
+        answerFAQ3.classList.add('hidden');
+        btnFAQ3.classList.remove('bg-red-600');
+        btnFAQ3.classList.remove('text-white');
+        iconFAQ3.textContent = '+';
+      }
+
+      };
+
+      function toggleFAQ4() {
+      const btnFAQ4 = document.getElementById('btn-faq4');
+      const iconFAQ4 = document.getElementById('icon-faq4');
+      const answerFAQ4 = document.getElementById('answer-faq4');
+
+      if (answerFAQ4.classList.contains('hidden')) {
+        answerFAQ4.classList.remove('hidden');
+        btnFAQ4.classList.add('bg-red-600');
+        btnFAQ4.classList.add('text-white');
+        iconFAQ4.textContent = '-';
+      } else {
+        answerFAQ4.classList.add('hidden');
+        btnFAQ4.classList.remove('bg-red-600');
+        btnFAQ4.classList.remove('text-white');
+        iconFAQ4.textContent = '+';
+      }
+
+      };
+      
+
+
+    </script>
+    
+
+
+</body>
+</html>

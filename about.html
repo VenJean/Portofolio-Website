@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!--TAILLWIND-->
+    <script src="https://unpkg.com/feather-icons"></script> <!--ICON-->
+</head>
+
+<body class="bg-white text-black">
+
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center px-4 py-6">
+            <div class="text-2xl text-red-500 font-bold">Ven Jean</div>
+
+            <ul id="navbar-link" class="text-white hidden md:flex space-x-4">
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="text-gray-800 hover:text-red-500 transition">Beranda</a></li>
+                <li><a class="text-red-500 font-bold">Tentang Saya</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="text-gray-800 hover:text-red-500 transition">Portofolio</a></li>
+                
+            </ul>
+
+            <div class="flex item-center space-x-2">
+                <div>
+                <button id="language-toggle" class="p-2 border border-rounded rounded-full border-red-500 hover:bg-gray-100 ">
+                    <i data-feather="globe" class="text-red-500"></i>
+                </button>
+
+                <button id="menu-toggle" class="p-2">
+                    <i data-feather="menu" class="text-red-500 md:hidden"></i>
+                </button>
+            </div>
+
+        </nav>
+
+        <!--Mobile Display-->
+        <ul id="menu-dropdown" class="py-6 hidden md:hidden shadow-md">
+            <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Beranda</a></li>
+            <li><a class="block text-red-500 font-bold text-center py-2">Tentang Saya</a></li>
+            <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Portofolio</a></li>
+        </ul>
+
+        <ul id="language-dropdown" class="pt-4 pb-0 hidden shadow-md md:absolute md:right-16 md:w-32 md:rounded md:rounded-md">
+            <li><button id="btn-indonesia" class="w-full hover:bg-gray-100 py-2">Indonesia</button></li>
+            <li><button id="btn-english" class="w-full hover:bg-gray-100 py-2">English</button></li>
+        </ul>
+
+    </header>
+
+
+    <!--TOP-->
+    <section class="mt-8 text-gray-800">
+       <div class="text-center px-6 lg:px-64"> 
+            <h2 class="text-xl font-bold lg:text-2xl">C. Caesar Sancho Ven Jean</h4>
+            <h5 class="text-sm font lg:text-md">Front-End Developer & Web Designer <br><span class="text-blue-500"> | Lihat CV |</span></h5>
+            <p class="pt-4 text-left lg:text-md">Saya lahir pada 7 Agustus 2003 dan melanjutkan pendidikan di Universitas Advent Indonesia, 
+                jurusan Sistem Informasi, pada tahun 2020. Saya baru saja menyelesaikan pendidikan dan resmi 
+                lulus pada Juli 2024 sebagai seorang fresh graduate. <br class="lg:hidden"> <span class="text-red-500">Keahlian saya berfokus pada bidang web design 
+                dan front-end development. </span>Saya memiliki minat yang besar untuk mempelajari hal-hal baru, terutama 
+                dalam berbagai bidang pekerjaan yang menantang.</p>
+
+            <h2 class="mt-6 text-xl font-semibold">Keahlian</h2>
+
+            <!--Button-->
+            <div class="space-x-6 mt-4">
+                <button onclick="ShowContents ('hard')" id="btn-hard-skill" class="bg-red-500 text-white px-4 py-2 rounded-lg shadow-md">Hard Skill</button>
+                <button onclick="ShowContents ('soft')" id="btn-soft-skill" class="bg-gray-100 px-4 py-2 rounded-lg hover:bg-gray-200 shadow-md">Soft Skill</button>
+            </div>
+
+            <!--Skills Content-->
+            <div class="mt-4">
+                <!--Hard Skills-->
+                <div id="hard-contents">
+                    <!--1-->
+                    <div class="grid grid-cols-2 gap-2 lg:grid-cols-6">
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg">
+                            <img src="https://www.figma.com/community/resource/8f3b2e8c-0d3f-4409-ae0d-42449d61b841/thumbnail" class="rounded-lg"  >
+                            <h4 class="pt-2 font-semibold text-lg">Figma</h4>
+                            <p class="text-sm">-Web Designer</p>
+                        </div>
+
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuER1tOoBap4qZ8V7OUsbf-quqFfEjj3Jnzg&s" class="rounded-lg"  >
+                            <h4 class="pt-2 lg:pt-6 font-semibold text-lg">VS Code</h4>
+                            <p class="text-xs px-6 pb-2">-Html, CSS, JavaScript, Taillwind</p>
+                        </div>
+                    
+
+
+                    <!--2-->
+                    
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg pb-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3JbX93EtE2U45SQlBEKZFMkbFz8aKjcBlg&s" class="rounded-lg"  >
+                            <h4 class="font-semibold text-lg">IELTS</h4>
+                            <p class="text-xs px-6">-English Speaker Level B2</p>
+                        </div>
+
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg pb-2">
+                            <img src="https://media.licdn.com/dms/image/v2/C4D12AQFYj4soXttKFA/article-cover_image-shrink_600_2000/article-cover_image-shrink_600_2000/0/1645697705439?e=2147483647&v=beta&t=OHc_6ccj3AgQg_Par1nHra8_DYss6fdaJC6X_X-9wI8" class="rounded-lg pt-8"  >
+                            <h4 class="pt-4 font-semibold text-md px-6">IT Business Analyst</h4>
+                            <p class="text-xs px-6">-research business needs</p>
+                        </div>
+            
+
+
+                    <!--3-->
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg">
+                            <img src="https://logos-world.net/wp-content/uploads/2023/02/ChatGPT-Logo.jpg" class="rounded-lg pt-6"  >
+                            <h4 class="pt-2 font-semibold text-lg lg:pt-4">AI</h4>
+                            <p class="text-sm px-6">-Chat GPT, Gemini</p>
+                        </div>
+
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM9v6DvyCAD9ZG_F9rQCGWFkFGL9UrZXotxQ&s" class="rounded-lg pt-4"  >
+                            <h4 class="pt-2 font-semibold text-lg">Others</h4>
+                            <p class="text-sm px-6">-Excel, Word, Canva</p>
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+
+                <!--Soft skills-->
+                <div id="soft-contents">
+
+                    <!--1-->
+                    <div class="grid grid-cols-2 gap-2 lg:grid-cols-5">
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg pb-2">
+                            <img src="https://media.istockphoto.com/id/1031459248/vector/vector-illustration-of-a-businessman-or-politician-speaking-to-a-large-crowd-of-people.jpg?s=612x612&w=0&k=20&c=ForHEnhvdlg9VkK8QhAjEHsdYQ8nRbFEMg2_Wo4TF3g=" class="rounded-lg"  >
+                            <h4 class="font-semibold text-md pt-2 px-6">Public Speaking</h4>
+                        </div>
+
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg">
+                            <img src="https://www.intoo.com/wp-content/uploads/sites/5/2024/07/AdobeStock_530720472.jpeg" class="rounded-lg"  >
+                            <h4 class="pt-2 font-semibold text-md px-6">Time Management</h4>
+                        </div>
+                
+
+
+                    <!--2-->
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg pb-2">
+                            <img src="https://img.freepik.com/premium-vector/adaptability-vector-illustration-style_717774-98938.jpg" class="rounded-lg"  >
+                            <h4 class="font-semibold text-md pt-2 px-6">Rapid Adaptation</h4>
+                        </div>
+
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsTgzaHQ85Lqh9nTm6EVrskagmjy5UVHByuQ&s" class="rounded-lg"  >
+                            <h4 class="pt-4 font-semibold text-md">Presentation</h4>
+                        </div>
+
+
+                    <!--3-->
+                        <div class="mt-2 border border-2 rounded-lg shadow-lg">
+                            <img src="https://img.freepik.com/free-vector/business-team-brainstorm-idea-lightbulb-from-jigsaw-working-team-collaboration-enterprise-cooperation-colleagues-mutual-assistance-concept-pinkish-coral-bluevector-isolated-illustration_335657-1651.jpg" class="rounded-lg"  >
+                            <h4 class="font-semibold text-md pt-2 px-6">Team Work</h4>
+                        </div>
+
+                    </div>
+
+                        
+                </div>
+
+            </div>
+            
+       </div>
+
+    </section>
+
+
+    <!--EDUCATION BG-->
+    <section class="container mx-auto max-w-xl mt-16 text-center text-gray-800 border border-red-500 rounded-lg shadow-lg pb-8">
+        <h2 class="text-lg font-bold pt-6">Latar Belakang Pendidikan</h2>
+        <img class="rounded-xl mx-auto w-64 lg:w-96 pt-4" src="https://sinersimobile.id/pluginfile.php/9202/course/overviewfiles/unai.png" alt="Logo Universitas Advent Indonesia">
+        <div class="px-6 lg:px-16">
+            <h4 class="pt-4 font-semibold text-md">
+                Universitas Advent Indonesia <br> 
+                <span class="text-sm text-gray-500">Agustus 2020 - Juli 2024</span>
+            </h4>
+            <h4 class="text-sm text-red-500 font-semibold">
+                S1 Sistem Informasi | IPK : 3.4/4.0
+            </h4>
+            <p class="text-sm font-semibold">
+                Makalah: Analisis Aplikasi FLIP Terhadap pengguna layanan sistem transfer antar bank menggunakan metode SEM
+            </p>
+        </div>
+    </section>
+
+
+
+
+    <!--experience-->
+    <section class="container max-w-xl mx-auto text-gray-800">
+        <div class="mt-14">
+            <h2 class="text-lg font-bold text-center">Pengalaman Kerja</h2>
+
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-6 items-center px-6">
+                <!--EXPERIENCE 1-->
+                <div class="border border-2 rounded-lg mt-4 pb-4 shadow-lg">
+                    <img src="https://venjean.github.io/Portofolio-Website/src/img/MAIN LOGO-01.png">
+
+                    <div class="text-center">
+                        <h4 class=" text-md font-semibold">PT RUMAH & CLUB 1001 <br>BINTANG VESSILIA</h4>
+                        <h4 class="text-sm font-semibold">(Juli 2024 - Sekarang)</h4>
+                        <h4 class="pt-6 text-sm font-semibold underline">Multi Level Marketing</h4>
+                        <h4 class="text-sm text-red-500 font-semibold">Posisi Web Designer</h4>
+                        <p class="pt-4 text-md font-semibold">Tugas & Tanggung Jawab :</p>
+                    </div>
+
+                    <p class="text-sm px-4"><span class="text-red-500 font-bold">1.</span> Menganalisa Kebutuhan bisnis dan mengaplikasikannya kedalam bentuk website<br>
+                    <span class="text-red-500 font-bold">2.</span> Memberikan arahan dengan rincian design pada web kepada stakeholder
+                    (programmer)<br>
+                    <span class="text-red-500 font-bold">3.</span> Membuat Design & Flow Website yang dibutuhkan oleh perusahaan
+                    (Welcome Page, Login/Register Page, Main Page, Marketplace Page, Program Page,
+                    Reward Page, Wallet Page, Profile Page, Withdraw Page) dengan tampilan
+                    responsive. 
+                    </p>
+
+                    <div class="flex justify-center">
+                        <a href="https://venjean.github.io/Portofolio-Website/projects.html">
+                            <button class="text-center mt-6 py-2 px-4 bg-red-500 text-white hover:bg-red-600 rounded-md shadow-md">
+                                Lihat Project
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+                <!--EXPERIENCE 2-->
+                <div class="border border-2 rounded-lg mt-4 pb-4 shadow-lg">
+                    <img class="px-10 pt-6" src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Telkomsel_2021_icon.svg">
+
+                    <div class="text-center">
+                        <h4 class=" text-md font-semibold">PT Telkomsel</h4>
+                        <h4 class="text-sm font-semibold">(Mei 2023 - Juli 2023)</h4>
+                        <h4 class="pt-6 text-sm font-semibold underline">Telekomunikasi</h4>
+                        <h4 class="text-sm text-red-500 font-semibold">Posisi Intern</h4>
+                        <p class="pt-4 text-md font-semibold">Tugas & Tanggung Jawab :</p>
+                    </div>
+
+                    <p class="text-sm px-4"><span class="text-red-500 font-bold">1.</span> Membuat BOT Telegram menggunakan Java Script sebagai bahasa pemograman,
+                        Google SpreadSheet sebagai database dan Google Appscript sebagai tabel desk.<br>
+                    <span class="text-red-500 font-bold">2.</span> Merapihkan data costumer menggunakan Microsoft Excel
+                    </p>
+
+                    <div class="flex justify-center">
+                        <a href="https://venjean.github.io/Portofolio-Website/projects.html">
+                            <button class="text-center mt-6 py-2 px-4 bg-red-500 text-white hover:bg-red-600 rounded-md shadow-md">
+                                Lihat Project
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+    <!--Sertifikat-->
+
+    <section class="mt-14 container max-w-xl mx-auto">
+       <div class="text-center text-gray-800">
+            <h2 class="text-lg font-bold">Sertifikasi</h2>
+
+           <div class="grid grid-cols-1 lg:grid-cols-2 lg:gap-6">
+            <!--IELTS-->
+            <div class="px-6 border border-2 border-red-600 pb-4 mt-4">
+                <div class="flex justify-center items-center">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRi3JbX93EtE2U45SQlBEKZFMkbFz8aKjcBlg&s">
+                </div>
+
+
+                <h4 class="underline text-md font-semibold">IELTS</h4>
+                <h4 class="text-sm font-semibold text-gray-500">British Council</h4>
+                <h4 class="pt-4 text-left font-semibold px-6">Keterangan :</h4>
+
+                <div class="bg-red-600 text-white text-left text-sm px-6 rounded-xl">
+                    <p class="pt-4">-English Communication Skill,  Level B2</p>
+                    <p class="pt-2 pb-4">-Masa Aktif : 07 Agustus 2024 - 07 Agustus 2026</p>
+                </div>
+
+                <a href="https://drive.google.com/file/d/1Xl6kDvrUa-7cc51ZRAs59qMcrkp0Kvj8/view?usp=drive_link" download="IELTS Certificate">
+                    <h4 class="pt-4 text-sm underline text-blue-500 cursor-pointer">Download File</h4>
+                </a>
+            </div>
+
+            <!--Alibaba-->
+            <div class="px-6 mt-8 lg:mt-4 border border-2 border-orange-600 pb-4">
+                <div class="flex justify-center items-center pt-6 lg:pt-12">
+                    <img src="https://media.datacenterdynamics.com/media/images/alibaba_cloud.2e16d0ba.fill-279x140.png">
+                </div>
+
+
+                <h4 class="underline text-md font-semibold pt-6">Alibaba Cloud Computing</h4>
+                <h4 class="text-sm font-semibold text-gray-500">Alibaba Cloud</h4>
+                <h4 class="pt-4 text-left font-semibold px-6">Keterangan :</h4>
+
+                <div class="bg-orange-500 text-white text-left text-sm px-6 rounded-xl">
+                    <p class="pt-4">-Pembelajaran seputar cloud Alibaba, produk dan fungsi yang dibutuhkan</p>
+                    <p class="pt-2 pb-4">-Masa Aktif : 12 November 2023 - 12 November 2025</p>
+                </div>
+
+                <a href="https://drive.google.com/file/d/16fWGNb0H4YLaiea7T2KtSjtgp03VeJRW/view?usp=drive_link" download="Alibaba Certificate">
+                    <h4 class="pt-4 text-sm underline text-blue-500 cursor-pointer">Download File</h4>
+                </a>
+
+
+            </div>
+
+            </div>
+
+        </div> 
+
+    </section>
+
+
+
+
+
+
+
+    <!--FOOTER-->
+    <footer class="bg-white text-gray-800 mt-10 lg:mt-14 shadow-[0_-4px_10px_rgba(0,0,0,0.1)]">
+        <div id="footer-languages"> 
+             <div class="grid grid-cols-1 lg:grid-cols-4 text-left">
+                 <!--Navigasi-->
+ 
+                 <div class="pt-8 px-6 hidden lg:block">
+                     <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
+                     <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                     <ul class="mt-2 text-sm space-y-1">
+                        <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                        <li>Telepon: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                        <li>Instagram: <a href="https://instagram.com/jean.projectcareer" target="_blank" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" target="_blank" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                    </ul>
+                 </div>
+ 
+                 <div class="pt-8 px-6">
+                     <h4 class="text-lg font-semibold">Navigasi</h4>
+                     <ul class="mt-2 text-sm space-y-2">
+                        <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="hover:underline">Beranda</a></li>
+                        <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="hover:underline">Tentang Saya</a></li>
+                        <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="hover:underline">Portofolio</a></li>
+                    </ul>
+                 </div>
+ 
+                 <!--Social Media-->
+                 <div class="pt-8 px-6 lg:hidden">
+                     <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
+                     <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                     <ul class="mt-2 text-sm space-y-1">
+                        <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                        <li>Telepon: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                        <li>Instagram: <a href="https://instagram.com/jean.projectcareer" target="_blank" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                        <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" target="_blank" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                    </ul>
+                 </div>
+ 
+ 
+             </div>
+ 
+             <div class="w-full text-center mt-8 bg-red-500 pt-2 pb-2 text-white">
+                 <small>&copy; 2025 Nama Perusahaan. Semua Hak Dilindungi.</small>
+             </div>
+ 
+         </div>
+ 
+ 
+ 
+     </footer>
+    
+
+
+
+
+
+
+
+    <script>
+        feather.replace();
+
+        const navbarLink = document.getElementById('navbar-link');
+        const languageToggle = document.getElementById('language-toggle');
+        const menuToggle = document.getElementById('menu-toggle');
+
+        const btnIndo = document.getElementById('btn-indonesia');
+        const btnEng = document.getElementById('btn-english');
+
+
+
+        const languageDropdown = document.getElementById('language-dropdown');
+        const menuDropdown = document.getElementById('menu-dropdown');
+
+        //Language dropdown display
+        languageToggle?.addEventListener('click', () => {
+            languageDropdown.classList.toggle('hidden');
+        });
+
+        //english mode
+        btnEng?.addEventListener('click', () => {
+            navbarLink.innerHTML =`
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="text-gray-800 hover:text-red-500 transition">Home</a></li>
+                <li><a class="text-red-500 font-bold">About Me</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="text-gray-800 hover:text-red-500 transition">Project</a></li>
+            `;
+
+            menuDropdown.innerHTML = `
+            <ul id="menu-dropdown" class="py-6 md:hidden">
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Home</a></li>
+                <li><a class="block text-red-500 font-bold text-center py-2">About Me</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Project</a></li>
+            </ul>
+            `;
+
+            languageDropdown.classList.add('hidden');
+
+        });
+
+
+
+
+
+
+        //indonesian mode
+        btnIndo?.addEventListener('click', () => {
+            navbarLink.innerHTML =`
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="text-gray-800 hover:text-red-500 transition">Beranda</a></li>
+                <li><a class="text-red-500 font-bold">Tentang Saya</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="text-gray-800 hover:text-red-500 transition">Portofolio</a></li>
+            `;
+
+            menuDropdown.innerHTML = `
+            <ul id="menu-dropdown" class="py-6 md:hidden">
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Beranda</a></li>
+                <li><a class="block text-red-500 text-center font-bold py-2">Tentang Saya</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Portofolio</a></li>
+            </ul>
+            `;
+
+            languageDropdown.classList.add('hidden');
+        });
+
+
+
+
+        //Menu dropdown display
+        menuToggle?.addEventListener('click', () => {
+            menuDropdown.classList.toggle('hidden');
+        });
+
+        //random klik akan menghilangkan dropdown menu
+        document.addEventListener('click', (event) => {
+        if (!languageToggle?.contains(event.target) && !languageDropdown?.contains(event.target)) {
+          languageDropdown.classList.add('hidden');
+        }
+      });
+
+      function ShowContents(type) {
+      const btnHardSkill = document.getElementById('btn-hard-skill');
+      const btnSoftSkill = document.getElementById('btn-soft-skill');
+      const hardContents = document.getElementById('hard-contents');
+      const softContents = document.getElementById('soft-contents');
+
+        if (type === 'hard') {
+            hardContents.classList.remove('hidden');
+            softContents.classList.add('hidden');
+            btnSoftSkill.classList.remove('bg-red-500', 'text-white');
+            btnSoftSkill.classList.add('bg-gray-100', 'text-gray-800', 'hover:bg-gray-200');
+            btnHardSkill.classList.remove('bg-gray-100', 'text-gray-800', 'hover:bg-gray-200');
+            btnHardSkill.classList.add('bg-red-500', 'text-white');
+      } else {
+            hardContents.classList.add('hidden');
+            softContents.classList.remove('hidden');
+            btnSoftSkill.classList.add('bg-red-500', 'text-white');
+            btnSoftSkill.classList.remove('bg-gray-100', 'text-gray-800', 'hover:bg-gray-200');
+            btnHardSkill.classList.add('bg-gray-100', 'text-gray-800', 'hover:bg-gray-200');
+            btnHardSkill.classList.remove('bg-red-500', 'text-white');
+      }
+    }
+
+    //show default design
+    ShowContents('hard');
+
+
+    </script>
+    
+</body>
+</html>

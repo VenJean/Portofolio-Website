@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <script src="https://cdn.tailwindcss.com"></script> <!--TAILLWIND-->
+    <script src="https://unpkg.com/feather-icons"></script> <!--ICON-->
+</head>
+<body class="bg-white text-black">
+
+    <header class="bg-white shadow-lg">
+        <nav class="container mx-auto flex justify-between items-center px-4 py-6">
+            <div class="text-2xl text-red-500 font-bold">Ven Jean</div>
+
+            <ul id="navbar-link" class="text-white hidden md:flex space-x-4">
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="text-gray-800 hover:text-red-500 transition">Beranda</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="text-gray-800 hover:text-red-500 transition">Tentang Saya</a></li>
+                <li><a class="text-red-500 font-bold">Portofolio</a></li>
+                
+            </ul>
+
+            <div class="flex item-center space-x-2">
+                <div>
+                <button id="language-toggle" class="p-2 border border-rounded rounded-full border-red-500 hover:bg-gray-100 ">
+                    <i data-feather="globe" class="text-red-500"></i>
+                </button>
+
+                <button id="menu-toggle" class="p-2">
+                    <i data-feather="menu" class="text-red-500 md:hidden"></i>
+                </button>
+            </div>
+
+        </nav>
+
+        <!--Mobile Display-->
+        <ul id="menu-dropdown" class="py-6 hidden md:hidden shadow-md">
+            <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Beranda</a></li>
+            <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Tentang Saya</a></li>
+            <li><a class="block text-red-500 font-bold text-center py-2">Portofolio</a></li>
+        </ul>
+
+        <ul id="language-dropdown" class="pt-4 pb-0 hidden shadow-md md:absolute md:right-16 md:w-32 md:rounded md:rounded-md">
+            <li><button id="btn-indonesia" class="w-full hover:bg-gray-100 py-2">Indonesia</button></li>
+            <li><button id="btn-english" class="w-full hover:bg-gray-100 py-2">English</button></li>
+        </ul>
+
+    </header>
+
+
+
+    <section class="mt-8 text-center px-6 text-gray-800">
+        
+        <h2 class="text-xl font-bold">Projects</h2>
+
+
+        <div class="grid grid-cols-2 mt-4">
+            <h2 id="link-designer" onclick="ShowsContents('design')" class="text-red-500 underline font-semibold cursor-pointer">Web Designer</h2>
+            <h2 id="link-bot" onclick="ShowsContents('bot')" class="hover:text-red-500 cursor-pointer">Bot Telegram</h2>
+        </div>
+
+
+        <!--Web designer project-->
+        <div id="designer-contents">
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+
+                <div>
+                    <h2 class="text-sm font-bold text-gray-500 mt-10">Login/Register Page</h2>
+                    <div class="relative overflow-hidden rounded-lg border w-64 mx-auto shadow-lg">
+                        <!-- Wrapper untuk slider -->
+                        <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Gambar di dalam slider -->
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/znczLYJ/Screenshot-1595.png" alt="Image 1">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/Bs3BJKj/Screenshot-1597.png" alt="Image 2">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/ysVMdZR/Screenshot-1593.png" alt="Image 3">
+
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h2 class="text-sm font-bold text-gray-500 mt-10">Main Page</h2>
+                    <div class="relative overflow-hidden rounded-lg border w-64 mx-auto shadow-lg">
+                        <!-- Wrapper untuk slider -->
+                        <div id="slider-2" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Gambar di dalam slider -->
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/zNKtnHd/Screenshot-1590.png" alt="Image 1">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/TwCT9mk/Screenshot-1589.png" alt="Image 2">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h2 class="text-sm font-bold text-gray-500 mt-10">Marketplace/ E-commerce</h2>
+                    <div class="relative overflow-hidden rounded-lg border w-64 mx-auto shadow-lg">
+                        <!-- Wrapper untuk slider -->
+                        <div id="slider-3" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Gambar di dalam slider -->
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/KjqMdNk/Screenshot-1600.png" alt="Image 1">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/QFBJCSf/Screenshot-1599.png" alt="Image 2">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/vjsK0Fv/Screenshot-1603.png" alt="Image 3">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/L54HHNZ/Screenshot-1605.png" alt="Image 4">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h2 class="text-sm font-bold text-gray-500 mt-10">MLM Program</h2>
+                    <div class="relative overflow-hidden rounded-lg border w-64 mx-auto shadow-lg">
+                        <!-- Wrapper untuk slider -->
+                        <div id="slider-4" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Gambar di dalam slider -->
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/MRmxRfd/Screenshot-1608.png" alt="Image 1">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/ynrBpSQ/Screenshot-1607.png" alt="Image 2">
+
+                        </div>
+                    </div>
+                </div>
+
+
+                <div>
+                    <h2 class="text-sm font-bold text-gray-500 mt-10">Wallet Page</h2>
+                    <div class="relative overflow-hidden rounded-lg border w-64 mx-auto shadow-lg">
+                        <!-- Wrapper untuk slider -->
+                        <div id="slider-5" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Gambar di dalam slider -->
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/VJBtNGC/Screenshot-1613.png" alt="Image 1">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/TP8BRHx/Screenshot-1614.png" alt="Image 2">
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <h2 class="text-sm font-bold text-gray-500 mt-10">Withdraw Page</h2>
+                    <div class="relative overflow-hidden rounded-lg border w-64 mx-auto shadow-lg">
+                        <!-- Wrapper untuk slider -->
+                        <div id="slider-6" class="flex transition-transform duration-500 ease-in-out">
+                            <!-- Gambar di dalam slider -->
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/82WHdqW/Screenshot-1623.png" alt="Image 1">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/R6c2Fcm/Screenshot-1621.png" alt="Image 2">
+                            <img class="w-full object-cover" src="https://i.ibb.co.com/b3kjsRJ/Screenshot-1626.png" alt="Image 3">
+
+                        </div>
+                    </div>
+                </div>
+            
+            
+            </div>
+
+            <a href="https://www.figma.com/design/g6cMQ8AdrmpOiKKjWMEwil/DAY-1---Icon%2C-Coloring-%26-Plugin?node-id=0-1&t=Xki0MkFJltATT7iP-1">
+                <button class="mt-8 py-2 px-4 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600">Lihat Lebih Banyak</button>
+            </a>
+
+        </div>
+
+
+
+
+        <div id="bot-contents">
+
+            <div>
+                <h2 class="text-sm font-bold text-gray-500 mt-10">Milky-Bot (testing)</h2>
+                        <div class="relative overflow-hidden rounded-lg border w-64 mx-auto shadow-lg">
+                            <!-- Wrapper untuk slider -->
+                            <div id="slider" class="flex transition-transform duration-500 ease-in-out">
+                                <!-- Gambar di dalam slider -->
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/yVB5F0z/Screenshot-1630.png" alt="Image 1">
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/fSM1ZZ5/Screenshot-1629.png" alt="Image 2">
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/fDQBy0n/Screenshot-1628.png" alt="Image 3">
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/DpPcGQz/Screenshot-1627.png" alt="Image 4">
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/ThSsVxX/Screenshot-1631.png" alt="Image 5">
+
+                            </div>
+                        </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!--FOOTER-->
+    <footer class="bg-white text-gray-800 mt-10 lg:mt-14 shadow-[0_-4px_10px_rgba(0,0,0,0.1)]">
+        <div id="footer-languages"> 
+             <div class="grid grid-cols-1 lg:grid-cols-4 text-left">
+                 <!--Navigasi-->
+ 
+                 <div class="pt-8 px-6 hidden lg:block">
+                    <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
+                    <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                       <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                       <li>Telepon: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                       <li>Instagram: <a href="https://instagram.com/jean.projectcareer" target="_blank" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                       <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" target="_blank" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                   </ul>
+                </div>
+
+                <div class="pt-8 px-6">
+                    <h4 class="text-lg font-semibold">Navigasi</h4>
+                    <ul class="mt-2 text-sm space-y-2">
+                       <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="hover:underline">Beranda</a></li>
+                       <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="hover:underline">Tentang Saya</a></li>
+                       <li><a href="https://venjean.github.io/Portofolio-Website/projects.html" class="hover:underline">Portofolio</a></li>
+                   </ul>
+                </div>
+
+                <!--Social Media-->
+                <div class="pt-8 px-6 lg:hidden">
+                    <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
+                    <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
+                    <ul class="mt-2 text-sm space-y-1">
+                       <li>Email: <a href="mailto:bossvr7x@gmail.com?subject=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">bossvr7x@gmail.com</a></li>
+                       <li>Telepon: <a href="https://wa.me/+62895344643800?text=Hallo Ven Jean" target="_blank" class="hover:underline text-blue-600">+62 895-3446-43800</a></li>
+                       <li>Instagram: <a href="https://instagram.com/jean.projectcareer" target="_blank" class="hover:underline text-blue-600">@jean.projectcareer</a></li>
+                       <li>LinkedIn: <a href="https://www.linkedin.com/in/colonel-caesar-sancho-ven-jean-38a788240/" target="_blank" class="hover:underline text-blue-600">Colonel Caesar Sancho Ven Jean</a></li>
+                   </ul>
+                </div>
+ 
+ 
+             </div>
+ 
+             <div class="w-full text-center mt-8 bg-red-500 pt-2 pb-2 text-white">
+                 <small>&copy; 2025 Nama Perusahaan. Semua Hak Dilindungi.</small>
+             </div>
+ 
+         </div>
+ 
+ 
+ 
+     </footer>
+
+
+
+
+
+    <script>
+        feather.replace();
+
+        const navbarLink = document.getElementById('navbar-link');
+        const languageToggle = document.getElementById('language-toggle');
+        const menuToggle = document.getElementById('menu-toggle');
+
+        const btnIndo = document.getElementById('btn-indonesia');
+        const btnEng = document.getElementById('btn-english');
+
+
+
+        const languageDropdown = document.getElementById('language-dropdown');
+        const menuDropdown = document.getElementById('menu-dropdown');
+
+        //Language dropdown display
+        languageToggle?.addEventListener('click', () => {
+            languageDropdown.classList.toggle('hidden');
+        });
+
+        //english mode
+        btnEng?.addEventListener('click', () => {
+            navbarLink.innerHTML =`
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="text-gray-800 hover:text-red-500 transition">Home</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about/html" class="text-gray-800 hover:text-red-500 transition">About Me</a></li>
+                <li><a class="text-red-500 font-bold">Project</a></li>
+            `;
+
+            menuDropdown.innerHTML = `
+            <ul id="menu-dropdown" class="py-6 md:hidden">
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Home</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">About Me</a></li>
+                <li><a class="block text-red-500 font-bold text-center py-2">Project</a></li>
+            </ul>
+            `;
+
+            languageDropdown.classList.add('hidden');
+
+        });
+
+
+
+
+        
+
+        //indonesian mode
+        btnIndo?.addEventListener('click', () => {
+            navbarLink.innerHTML =`
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="text-gray-800 hover:text-red-500 transition">Beranda</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="text-gray-800 hover:text-red-500 transition">Tentang Saya</a></li>
+                <li><a class="text-red-500 font-bold">Portofolio</a></li>
+            `;
+
+            menuDropdown.innerHTML = `
+            <ul id="menu-dropdown" class="py-6 md:hidden">
+                <li><a href="https://venjean.github.io/Portofolio-Website/index.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Beranda</a></li>
+                <li><a href="https://venjean.github.io/Portofolio-Website/about.html" class="block text-gray-800 text-center hover:text-red-500 py-2 transition">Tentang Saya</a></li>
+                <li><a class="block text-red-500 text-center font-bold py-2">Portofolio</a></li>
+            </ul>
+            `;
+
+            languageDropdown.classList.add('hidden');
+        });
+
+
+
+
+
+
+
+        //Menu dropdown display
+        menuToggle?.addEventListener('click', () => {
+            menuDropdown.classList.toggle('hidden');
+        });
+
+        //random klik akan menghilangkan dropdown menu
+        document.addEventListener('click', (event) => {
+        if (!languageToggle?.contains(event.target) && !languageDropdown?.contains(event.target)) {
+          languageDropdown.classList.add('hidden');
+        }
+      });
+
+
+
+
+      // Fungsi untuk slider
+    function initializeSliders() {
+        const sliders = document.querySelectorAll('[id^="slider"]');
+        
+        sliders.forEach(slider => {
+            const totalImages = slider.children.length;
+            let index = 0;
+
+            function slideImages() {
+                index = (index + 1) % totalImages; // monoton
+                slider.style.transform = `translateX(-${index * 100}%)`; // Geser gambar
+            }
+
+            // Set interval untuk setiap slider
+            setInterval(slideImages, 2000);
+        });
+    }
+
+    // Inisialisasi slider saat halaman dimuat
+    document.addEventListener("DOMContentLoaded", initializeSliders);
+
+
+
+    function ShowsContents(type) {
+        const linkDesigner = document.getElementById('link-designer');
+        const linkBot = document.getElementById('link-bot');
+        const designerContents = document.getElementById('designer-contents');
+        const botContents = document.getElementById('bot-contents');
+
+        if (type === 'design') {
+            designerContents.classList.remove('hidden');
+            botContents.classList.add('hidden');
+            
+            linkDesigner.classList.remove('text-gray-800', 'hover:text-red-500');
+            linkDesigner.classList.add('font-semibold', 'text-red-500', 'underline');
+            linkBot.classList.remove('font-semibold', 'text-red-500', 'underline');
+            linkBot.classList.add('text-gray-800', 'hover:text-red-500');
+            
+        } else {
+            designerContents.classList.add('hidden');
+            botContents.classList.remove('hidden');
+
+            linkDesigner.classList.add('text-gray-800', 'hover:text-red-500');
+            linkDesigner.classList.remove('font-semibold', 'text-red-500', 'underline');
+            linkBot.classList.add('font-semibold', 'text-red-500', 'underline');
+            linkBot.classList.remove('text-gray-800', 'hover:text-red-500');
+        }
+    
+    }
+
+    ShowsContents('design');
+
+        
+
+
+
+    </script>
+    
+</body>
+</html>

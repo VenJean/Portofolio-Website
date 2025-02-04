@@ -91,11 +91,11 @@
     </section>
 
     <!--Contact Contents-->
-    <section class="bg-white text-gray-800 lg:mt-10">
+    <section class="bg-white text-gray-800 md:mt-10 lg:mt-10">
 
-      <div class="flex flex-col lg:flex-row lg:pl-10">
+      <div class="flex flex-col md:flex-row lg:flex-row lg:pl-10">
         <!--Text-->
-        <div class="lg:items-start lg:w-1/2">
+        <div class="md:items-start lg:items-start md:w-1/2 lg:w-1/2">
             <div id="title-contact-content">
                 <div class="text-left px-6 py-8">
                     <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>Hubungi Saya</h3>
@@ -106,7 +106,7 @@
             </div>
 
             <!--Sosmed display on dekstop-->
-            <div class="mt-10 px-6 hidden lg:block">
+            <div class="mt-10 px-6 hidden md:block lg:block">
                 <div class="flex space-x-1">
                     <a href="https://instagram.com/jean.projectcareer">
                         <div class="flex justify-center pt-2 text-white bg-red-500 w-10 h-10 rounded-full hover:bg-red-600 hover:cursor-pointer">
@@ -138,27 +138,27 @@
         </div>
 
         <!--FORM-->
-        <div id="form-languages" class="lg:w-1/2">
-            <form id="form-message" class="lg:py-8">
-                <div class="lg:flex">
-                    <div class="w-full px-6 lg:w-1/2 lg:pr-4">
+        <div id="form-languages" class="md:w-1/2 lg:w-1/2">
+            <form id="form-message" class="md:py-8 lg:py-8">
+                <div class="md:flex lg:flex">
+                    <div class="w-full px-6 md:w-1/2 lg:w-1/2 md:pr-4 lg:pr-4">
                         <label class="block font-semibold tracking-wide" for="your-name">Nama Anda : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="text" id="your-name" placeholder="nama Lengkap" required>
                     </div>
 
-                    <div class="w-full px-6 py-2 lg:py-0 lg:w-1/2 lg:pl-0">
+                    <div class="w-full px-6 py-2 md:py-0 lg:py-0 md:w-1/2 lg:w-1/2 md:pl-0 lg:pl-0">
                         <label class="block font-semibold tracking-wide" for="email">Email : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="email" id="email" placeholder="contoh@gmail.com" required>
                     </div>
                 </div>
 
-                <div class="lg:flex">
-                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pr-0">
+                <div class="md:flex lg:flex">
+                    <div class="w-full px-6 py-2 md:w-1/2 lg:w-1/2 md:pr-4 lg:pr-0">
                         <label class="block font-semibold tracking-wide" for="phone">Nomor Telepon : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="tel" id="phone" required>
                     </div>
 
-                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pl-0 ">
+                    <div class="w-full px-6 py-2 md:w-1/2 lg:w-1/2 md:pl-0 lg:pl-0 ">
                         <label class="block font-semibold tracking-wide" for="interest">Pembahasan :<a class="text-red-500">*</a></label>
                         <select class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" id="interest" required>
                             <option>Peluang Karir</option>
@@ -201,7 +201,7 @@
 
             <!--Sosmed display on mobile-->
 
-            <div class="mt-8 px-6 lg:hidden">
+            <div class="mt-8 px-6 md:hidden lg:hidden">
                 <div class="flex space-x-1">
                     <a href="https://instagram.com/jean.projectcareer">
                         <div class="flex justify-center pt-2 text-white bg-red-500 w-10 h-10 rounded-full hover:bg-red-600 hover:cursor-pointer">
@@ -241,14 +241,14 @@
     <section id="faq-languages" class="bg-gray-100 text-gray-800 mt-8 pb-8 lg:pb-12">
 
         <!--Judul-->
-        <div class="px-6 pt-6 lg:pt-10 lg:text-center">
+        <div class="px-6 pt-6 md:pt-10 md:text-center lg:pt-10 lg:text-center">
         <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>FAQ</h3>
         <h2 class="text-xl lg:text-2xl font-bold">Pertanyaan? <a class="text-red-500 font-normal">Lihat Disini.</a></h2>
         </div>
 
 
         <!--FAQ Button-->
-        <div class="px-6 lg:px-60 lg:items-center">
+        <div class="px-6 lg:px-60 md:px-40 md:items-center lg:items-center">
             <!--1--> 
             <button id="btn-faq" onclick="toggleFAQ()"
              class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
@@ -309,10 +309,10 @@
     <!--FOOTER-->
     <footer class=" text-gray-800 mt-4">
        <div id="footer-languages"> 
-            <div class="grid grid-cols-1 lg:grid-cols-4 text-left">
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-left">
                 <!--Navigasi-->
 
-                <div class="pt-8 px-6 hidden lg:block">
+                <div class="pt-8 px-6 hidden md:block lg:block">
                     <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
                     <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
                     <ul class="mt-2 text-sm space-y-1">
@@ -333,7 +333,7 @@
                 </div>
 
                 <!--Social Media-->
-                <div class="pt-8 px-6 lg:hidden">
+                <div class="pt-8 px-6 md:hidden lg:hidden">
                     <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
                     <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
                     <ul class="mt-2 text-sm space-y-1">
@@ -356,7 +356,6 @@
 
 
     </footer>
-
 
     <!--Script-->
     <script>
@@ -434,26 +433,26 @@
             `;
 
             formLanguages.innerHTML = `
-            <form id="form-message" class="lg:py-8">
-                <div class="lg:flex">
-                    <div class="w-full px-6 lg:w-1/2 lg:pr-4">
+            <form id="form-message" class="md:py-8 lg:py-8">
+                <div class="md:flex lg:flex">
+                    <div class="w-full px-6 md:w-1/2 md:pr-4 lg:w-1/2 lg:pr-4">
                         <label class="block font-semibold tracking-wide" for="your-name">Your Name : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="text" id="your-name" placeholder="full name" required>
                     </div>
 
-                    <div class="w-full px-6 py-2 lg:py-0 lg:w-1/2 lg:pl-0">
+                    <div class="w-full px-6 py-2 md:py-0 md:w-1/2 md:pl0 lg:py-0 lg:w-1/2 lg:pl-0">
                         <label class="block font-semibold tracking-wide" for="email">Email : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="email" id="email" placeholder="example@gmail.com" required>
                     </div>
                 </div>
 
-                <div class="lg:flex">
-                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pr-0">
+                <div class="md:flex lg:flex">
+                    <div class="w-full px-6 py-2 md:w-1/2 md:pr-4 lg:w-1/2 lg:pr-0">
                         <label class="block font-semibold tracking-wide" for="phone">Phone : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="tel" id="phone" required>
                     </div>
 
-                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pl-0 ">
+                    <div class="w-full px-6 py-2 md:w-1/2 md:pl-0 lg:w-1/2 lg:pl-0 ">
                         <label class="block font-semibold tracking-wide" for="interest">Interested In :<a class="text-red-500">*</a></label>
                         <select class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" id="interest" required>
                             <option>Job Opportunities</option>
@@ -497,14 +496,14 @@
 
             faqLanguages.innerHTML = `
             <!--Judul-->
-                <div class="px-6 pt-6 lg:pt-10 lg:text-center">
+                <div class="px-6 pt-6 md:pt-10 md:text-center lg:pt-10 lg:text-center">
                 <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>FAQ</h3>
                 <h2 class="text-xl lg:text-2xl font-bold">Questions? <a class="text-red-500 font-normal">Look Here.</a></h2>
                 </div>
 
 
                 <!--FAQ Button-->
-                <div class="px-6 lg:px-60 lg:items-center">
+                <div class="px-6 md:px-40 lg:px-60 md:items-center lg:items-center">
                     <!--1--> 
                     <button id="btn-faq" onclick="toggleFAQ()"
                     class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
@@ -557,10 +556,10 @@
             `;
 
             footerLanguages.innerHTML = `
-                <div class="grid grid-cols-1 lg:grid-cols-4 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-left">
                 <!--Navigasi-->
 
-                <div class="pt-8 px-6 hidden lg:block">
+                <div class="pt-8 px-6 hidden md:block lg:block">
                     <h4 class="text-lg font-semibold">Further Information</h4>
                     <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
                     <ul class="mt-2 text-sm space-y-1">
@@ -581,7 +580,7 @@
                 </div>
 
                 <!--Social Media-->
-                <div class="pt-8 px-6 lg:hidden">
+                <div class="pt-8 px-6 md:hidden lg:hidden">
                     <h4 class="text-lg font-semibold">Further Information</h4>
                     <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
                     <ul class="mt-2 text-sm space-y-1">
@@ -602,7 +601,7 @@
             `;
 
         });
-
+        
         //indonesian mode
         btnIndo?.addEventListener('click', () => {
             navbarLink.innerHTML =`
@@ -645,26 +644,26 @@
             `;
 
             formLanguages.innerHTML = `
-            <form id="form-message" class="lg:py-8">
-                <div class="lg:flex">
-                    <div class="w-full px-6 lg:w-1/2 lg:pr-4">
+            <form id="form-message" class="md:py-8 lg:py-8">
+                <div class="md:flex lg:flex">
+                    <div class="w-full px-6 md:w-1/2 lg:pr-4 lg:w-1/2 lg:pr-4">
                         <label class="block font-semibold tracking-wide" for="your-name">Nama Anda : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="text" id="your-name" placeholder="nama Lengkap" required>
                     </div>
 
-                    <div class="w-full px-6 py-2 lg:py-0 lg:w-1/2 lg:pl-0">
+                    <div class="w-full px-6 py-2 md:py-0 md:w-1/2 md:pl-0 lg:py-0 lg:w-1/2 lg:pl-0">
                         <label class="block font-semibold tracking-wide" for="email">Email : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="email" id="email" placeholder="contoh@gmail.com" required>
                     </div>
                 </div>
 
-                <div class="lg:flex">
-                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pr-0">
+                <div class="md:flex lg:flex">
+                    <div class="w-full px-6 py-2 md:w-1/2 md:pr-4 lg:w-1/2 lg:pr-0">
                         <label class="block font-semibold tracking-wide" for="phone">Nomor Telepon : <a class="text-red-500">*</a></label>
                         <input class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 appearance-none focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" type="tel" id="phone" required>
                     </div>
 
-                    <div class="w-full px-6 py-2 lg:w-1/2 lg:pl-0 ">
+                    <div class="w-full px-6 py-2 md:w-1/2 md:pl-0 lg:w-1/2 lg:pl-0 ">
                         <label class="block font-semibold tracking-wide" for="interest">Pembahasan :<a class="text-red-500">*</a></label>
                         <select class="block w-full bg-gray-200 border border-red-500 rounded-lg py-3 px-3 focus:bg-white focus:border-red-500 focus:border-2 focus:outline-none" id="interest" required>
                             <option>Peluang Karir</option>
@@ -709,14 +708,14 @@
 
             faqLanguages.innerHTML = `
             <!--Judul-->
-            <div class="px-6 pt-6 lg:pt-10 lg:text-center">
+            <div class="px-6 pt-6 md:pt-10 md:text-center lg:pt-10 lg:text-center">
             <h3 class="text-lg lg:text-xl font-semibold"><a class="text-red-500">- </a>FAQ</h3>
             <h2 class="text-xl lg:text-2xl font-bold">Pertanyaan? <a class="text-red-500 font-normal">Lihat Disini.</a></h2>
             </div>
 
 
             <!--FAQ Button-->
-            <div class="px-6 lg:px-60 lg:items-center">
+            <div class="px-6 md:px-40 md:items-center lg:px-60 lg:items-center">
                 <!--1--> 
                 <button id="btn-faq" onclick="toggleFAQ()"
                 class="flex mt-4 px-6 py-4 text-left border border-1 border-red-500 rounded-lg text-sm hover:bg-red-500 hover:text-white w-full items-center justify-between  transition-all duration-300">
@@ -770,10 +769,10 @@
 
 
             footerLanguages.innerHTML = `
-                <div class="grid grid-cols-1 lg:grid-cols-4 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 text-left">
                 <!--Navigasi-->
 
-                <div class="pt-8 px-6 hidden lg:block">
+                <div class="pt-8 px-6 hidden md:block lg:block">
                     <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
                     <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
                     <ul class="mt-2 text-sm space-y-1">
@@ -794,7 +793,7 @@
                 </div>
 
                 <!--Social Media-->
-                <div class="pt-8 px-6 lg:hidden">
+                <div class="pt-8 px-6 md:hidden lg:hidden">
                     <h4 class="text-lg font-semibold">Informasi Lebih Lanjut</h4>
                     <p class="text-sm mt-2">Jl. PEPAYA Raya No.297, Kota Depok</p>
                     <ul class="mt-2 text-sm space-y-1">
@@ -816,6 +815,7 @@
 
 
         });
+        
 
         //Menu dropdown display
         menuToggle?.addEventListener('click', () => {

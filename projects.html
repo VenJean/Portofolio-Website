@@ -56,7 +56,7 @@
 
         <div class="grid grid-cols-2 mt-4">
             <h2 id="link-designer" onclick="ShowsContents('design')" class="text-red-500 underline font-semibold cursor-pointer">Web Designer</h2>
-            <h2 id="link-bot" onclick="ShowsContents('bot')" class="hover:text-red-500 cursor-pointer">Bot Telegram</h2>
+            <h2 id="link-developer" onclick="ShowsContents('developer')" class="hover:text-red-500 cursor-pointer">Web Developer</h2>
         </div>
 
 
@@ -164,22 +164,27 @@
 
 
 
-        <div id="bot-contents">
+        <div id="developer-contents">
 
             <div>
-                <h2 class="text-sm font-bold text-gray-500 mt-10">Milky-Bot (testing)</h2>
+                <h2 class="text-sm font-bold text-gray-500 mt-10">Web Developer</h2>
                         <div class="relative overflow-hidden rounded-lg border w-64 mx-auto shadow-lg">
                             <!-- Wrapper untuk slider -->
                             <div id="slider" class="flex transition-transform duration-500 ease-in-out">
                                 <!-- Gambar di dalam slider -->
-                                <img class="w-full object-cover" src="https://i.ibb.co.com/yVB5F0z/Screenshot-1630.png" alt="Image 1">
-                                <img class="w-full object-cover" src="https://i.ibb.co.com/fSM1ZZ5/Screenshot-1629.png" alt="Image 2">
-                                <img class="w-full object-cover" src="https://i.ibb.co.com/fDQBy0n/Screenshot-1628.png" alt="Image 3">
-                                <img class="w-full object-cover" src="https://i.ibb.co.com/DpPcGQz/Screenshot-1627.png" alt="Image 4">
-                                <img class="w-full object-cover" src="https://i.ibb.co.com/ThSsVxX/Screenshot-1631.png" alt="Image 5">
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/rGgK3Mcr/Screenshot-1652.png" alt="Image 1">
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/JWHVjVB4/Screenshot-1655.png" alt="Image 2">
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/d0GxjXbJ/Screenshot-1653.png" alt="Image 3">
+                                <img class="w-full object-cover" src="https://i.ibb.co.com/YTj1GT58/Screenshot-1654.png" alt="Image 4">
+                                
 
                             </div>
                         </div>
+
+
+                        <a href="https://venjean.github.io/IndoCair.Net/">
+                            <button class="mt-8 py-2 px-4 bg-red-500 text-white rounded-lg shadow-md hover:bg-red-600">Kunjungi Website</button>
+                        </a>
             </div>
 
         </div>
@@ -353,27 +358,27 @@
 
     function ShowsContents(type) {
         const linkDesigner = document.getElementById('link-designer');
-        const linkBot = document.getElementById('link-bot');
+        const linkdeveloper = document.getElementById('link-developer');
         const designerContents = document.getElementById('designer-contents');
-        const botContents = document.getElementById('bot-contents');
+        const developerContents = document.getElementById('developer-contents');
 
         if (type === 'design') {
             designerContents.classList.remove('hidden');
-            botContents.classList.add('hidden');
+            developerContents.classList.add('hidden');
             
             linkDesigner.classList.remove('text-gray-800', 'hover:text-red-500');
             linkDesigner.classList.add('font-semibold', 'text-red-500', 'underline');
-            linkBot.classList.remove('font-semibold', 'text-red-500', 'underline');
-            linkBot.classList.add('text-gray-800', 'hover:text-red-500');
+            linkdeveloper.classList.remove('font-semibold', 'text-red-500', 'underline');
+            linkdeveloper.classList.add('text-gray-800', 'hover:text-red-500');
             
         } else {
             designerContents.classList.add('hidden');
-            botContents.classList.remove('hidden');
+            developerContents.classList.remove('hidden');
 
             linkDesigner.classList.add('text-gray-800', 'hover:text-red-500');
             linkDesigner.classList.remove('font-semibold', 'text-red-500', 'underline');
-            linkBot.classList.add('font-semibold', 'text-red-500', 'underline');
-            linkBot.classList.remove('text-gray-800', 'hover:text-red-500');
+            linkdeveloper.classList.add('font-semibold', 'text-red-500', 'underline');
+            linkdeveloper.classList.remove('text-gray-800', 'hover:text-red-500');
         }
     
     }
